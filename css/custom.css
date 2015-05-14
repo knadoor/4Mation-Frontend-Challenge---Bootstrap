@@ -1,0 +1,130 @@
+.container {
+    animation: fadein 3s;
+    -moz-animation: fadein 3s; /* Firefox */
+    -webkit-animation: fadein 3s; /* Safari and Chrome */
+    -o-animation: fadein 3s; /* Opera */
+}
+
+.purple {
+    background-color: #C11454;
+    color: white;
+}
+
+.panel > .panel-heading {
+    background-image: none;
+    background-color: #F15B4E;
+    color: white;
+
+}
+
+.caption {
+    word-wrap: break-word;
+}
+
+.text {
+    font-size: 1.2em;
+}
+
+.loading {
+    text-align: center;
+    display: none;
+}
+
+.gap {
+    word-wrap: break-word;
+	display: none;
+}
+
+.center {
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.image {
+    max-width: 240px;
+    height: auto;
+}
+
+.imageContainer {
+    max-width: 250px;
+    height: auto;
+    float: left;
+    text-align: center;
+    border: 1px solid black;
+    margin: 1em;
+    color: skyblue;
+}
+
+.largeImageContainer {
+    text-align: center;
+    padding: 0.3em;
+    margin: 1em auto 1em auto;
+    color: skyblue;
+}
+
+/* Override the default text selection colour */
+::-moz-selection { /* for firefox */
+    background: #FECA32;
+}
+
+::selection {
+    background: #FECA32;
+}
+
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.table {
+    table-layout:fixed;
+    word-wrap:break-word
+}
+
+.table td {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#imageGallery {
+    margin: 1em auto 1em auto;
+    float: left;
+}
+
+#search {
+    padding: 1.3em;
+    font-size: 1.3em;
+}

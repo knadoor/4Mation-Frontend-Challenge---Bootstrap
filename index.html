@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>4Mation Frontend Challenge by Krishna Nadoor</title>
+
+	<link rel="stylesheet" href="css/bootstrap.min.css"/>
+	<link rel="stylesheet" href="css/custom.css"/>
+	
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div class="container"> <!-- Begin Container -->
+	<div class="row"> <!-- Begin 12 column single row -->
+		<div class="col-md-12 text-center">
+			<div class="jumbotron purple">
+				<h1>4Mation Frontend Challenge</h1>
+			</div>
+			<p class="text-primary text">Enter a search term to begin browsing Flickr!</p>
+			
+			<div class="col-md-6 col-md-offset-3">
+			
+				<form>
+					<div class="form-group">
+							<input type="text" class="form-control" id="search" placeholder="Enter a search keyword..." required>
+					</div>
+
+					<button type="button" class="btn btn-success btn-lg" onclick="return captureForm();">Search Flickr!</button>
+				</form>
+							
+				<p>
+					<ul class="list-group">
+						<!-- For debugging only -->
+						<!-- <li class="list-group-item list-group-item-warning gap" id="searchString"></li> -->
+						<li class="list-group-item list-group-item-success gap text" id="searchedFor"></li>
+						<li class="list-group-item list-group-item-info gap text" id="resultsCount"></li>
+					</ul>
+					<p class="loading"><img src="img/loading.gif" alt="Loading your images. Please wait."></p>
+				</p>	
+		    </div><!--End col-md-6 col-md-offset-3 -->
+  		 		
+			<!--<p class="loading"><img src="img/loading.gif" alt="Loading your images. Please wait."></p>-->
+			    	 
+			<!-- imageGallery is the main holding div for all generated image divs -->		 
+			<div id="imageGallery"> 
+				<!-- Image links will be generated here -->
+			</div> <!-- End imageGallery div -->
+
+
+ 
+		</div>
+	</div> <!-- End 12 column single row -->
+	
+</div> <!-- End Container -->
+
+<script src="js/jquery-2.1.3.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
